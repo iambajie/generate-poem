@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function myFunction() {
+    alert("诗句生成成功");
+    }
+    </script>
+</head>
+<body>
+    <form action="" method='POST'>
+        <p>想要哪种类型的诗词</p>
+        <p>1:自由诗(需要输入生成几句诗句）<br>2:藏头诗</p>
+        请输入对应序号：<input type="text" class="txt_input" name="poem_style"  value='' style="margin-top:10px;"/><br>
+        如果选择1，请给出需要生成几句诗：<input type="text" class="txt_input" name="num_sentence"  value='' style="margin-top:10px;"/><br>
+        如果选择2，请给出若干文字用于诗句生成：<input type="text" class="txt_input" name="start_with"  value='' style="margin-top:10px;"/><br>
+
+        <input type="submit" value="完成" class="button-new" onclick="myFunction()" style="margin-top:15px;"/>
+        <p>{{choosetext}}</p>
+    </form>    
+</body>
+</html>
